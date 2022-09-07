@@ -1,7 +1,9 @@
-#include <application.hpp>
 
+#include <boost/asio.hpp>
+#include <iostream>
 int main(int argc, char* argv[])
 {
-    Application app(argc, argv);
-    return app.exec();
+    boost::asio::io_service ioService;
+    std::cout << "Hello main\n";
+    return 0;
 }
