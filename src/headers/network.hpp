@@ -1,5 +1,9 @@
 #pragma once
 
+#include <string>
+
+#include <boost/beast.hpp>
+
 namespace NetworkLayer
 {
     namespace beast = boost::beast;
@@ -53,6 +57,6 @@ namespace NetworkLayer
          * @brief Receive server response
          * @returns server response
          * */
-        http::response<http::dynamic_body> receive();
+        http::response<http::dynamic_body> receive(bool);
     };
 }

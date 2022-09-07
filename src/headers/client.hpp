@@ -1,5 +1,9 @@
 #pragma once
 
+#include <string>
+
+#include "network.hpp"
+
 namespace ClientLayer
 {
     using tcp = NetworkLayer::tcp;
